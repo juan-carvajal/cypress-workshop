@@ -1,0 +1,37 @@
+{
+  "name": "cypress-workshop",
+  "version": "1.0.0",
+  "description": "This is Workshop about Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cypress:run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "lint:fix": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-carvajal/cypress-workshop.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
+  "author": "Juan David Carvajal juan030698@hotmail.com juan-carvajal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juan-carvajal/cypress-workshop/issues"
+  },
+  "homepage": "https://github.com/juan-carvajal/cypress-workshop#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^14.0.25",
+    "cypress": "^4.11.0",
+    "typescript": "^3.9.7"
+  }
+}

@@ -2,11 +2,11 @@ describe('Given a SDET learning cypress', () => {
 
   describe('when open Google Page', () => {
 
-    beforeEach(async () => {
+    beforeEach(() => {
       cy.visit('www.google.com')
     });
 
-    it('should have a title',async () => {
+    it('should have a title',() => {
 
       cy.title().should('eq', 'Google')
     });

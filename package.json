@@ -8,8 +8,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
-    "lint:fix": ""
+    "build": "npm run lint && npm run clean && tsc",
+    "lint": "tslint --project tsconfig.json test/**/*.ts src/**/*.ts cypress/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,8 @@
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^14.0.25",
     "cypress": "^4.11.0",
+    "tslint": "^6.1.2",
+    "tslint-config-airbnb": "^5.11.2",
     "typescript": "^3.9.7"
   }
 }

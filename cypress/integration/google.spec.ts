@@ -1,5 +1,5 @@
 describe('Given a SDET learning cypress', () => {
-
+  debugger;
   describe('when open Google Page', () => {
 
     beforeEach(() => {

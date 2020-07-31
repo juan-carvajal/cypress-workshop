@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run GUI e2e tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/cypress",
+      "runtimeArgs": [
+        "open"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run headless e2e tests",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/cypress",
+      "runtimeArgs": [
+        "run"
+      ],
+      "console": "integratedTerminal",
+    }
+  ],
+  "compounds": []
+}
